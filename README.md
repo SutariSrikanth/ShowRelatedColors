@@ -7,7 +7,7 @@ HTML, CSS, JAVASCRIPT
 ## Instructions
 
 
-Open HTML (Index.HTML) file in any browser and give any of 
+Open HTML (Index.HTML) file in any browser and  
 give any valid Color in input and click OK button, it will show 
 all related colors in masonry grid with hex value on right side 
 percentage in left side
