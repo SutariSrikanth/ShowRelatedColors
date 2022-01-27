@@ -1,23 +1,31 @@
-let colorsMapping = {
-  blue: '#0000ff',
-  purple: '#800080',
-  green: '#008000',
-  red: '#ff0000'
-};
 let percentages = [...Array(101).keys()].filter(i => i % 5 === 0).reverse();
 const btn = document.getElementById('btn');
 btn.addEventListener('click', () => {
   const input = document.getElementById('input');
-  console.log(input.value);
-  let color = colorsMapping[input.value.toLowerCase()];
+  let color = getColorCode(input.value.toLowerCase())
+  console.log(color)
   if (color) {
+	  document.getElementById('invalidColor').innerHTML = '';
     render(color);
   } else {
-    console.log('color not present in mapping');
+	document.getElementById('invalidColor').innerHTML = 'Invalid Color';
     const colorGrid = document.getElementById('colorGrid');
     colorGrid.innerHTML = '';
   }
 });
+ getColorCode = (str) => {
+    var ctx = document.createElement("canvas").getContext("2d");
+    ctx.fillStyle = str;
+	if(ctx.fillStyle == '#000000'){
+		if(str == 'black'){
+			return ctx.fillStyle
+		}else{
+			return 
+		}
+	}else{
+	 return ctx.fillStyle;
+	}
+}
 
 const render = color => {
   const colorGrid = document.getElementById('colorGrid');
