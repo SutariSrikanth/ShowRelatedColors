@@ -11,6 +11,8 @@ Open HTML (Index.HTML) file in any browser and
 give any valid Color in input and click OK button, it will show 
 all related colors in masonry grid with hex value on right side 
 percentage in left side
+
+
 If we give Invalid Color it will show a text "Invalid Color" in red color
 
 to see JavaScrpit code, open test.js file in editor
